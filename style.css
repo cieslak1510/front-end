@@ -1,0 +1,138 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #F8F8F8;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu{
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+    font-weight: 700;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+    background-color: #101010;
+}
+
+.menu ul{
+    list-style-type: none;
+    line-height: 3;
+}
+
+.m_li{
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.m_li a, .m_item a{
+    text-decoration: none;
+    color: #F8F8F8;  
+}
+
+.m_li a:hover, .m_item a:hover{
+    color: #D1D1D1;
+    
+}
+
+.m_item{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#intro h1{
+    padding-top: 150px;
+}
+.sec h1{
+    font-size: 5em;
+    margin-left: 100px;
+    padding-top: 80px;
+}
+
+.sec p{
+    margin-left: 200px;
+    margin-top: 150px;
+    font-size: 2em;    
+}
+
+.sec{
+    height: 100%;
+}
+
+#intro{
+    background-image: url(img/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 30%;
+    
+}
+#html{
+    background-color: #101010;
+    color: #F8F8F8;
+    background-image: url(img/html.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 30%;
+}
+
+.b_b_l, #c_b_l{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.b_b_r, .b_b_l{
+    width: 10%;
+    height: 10%;
+    font-size: 1.5rem;
+    color: #F8F8F8;
+    background-color: #101010;
+    border: 2px solid #F8F8F8;
+}
+
+.b_b_r:hover, .b_b_l:hover{
+    cursor: pointer;
+    background-color: #F8F8F8;
+    color: #101010;
+    transition: all .3s ease-in-out;
+}
+
+.b_b_r, #c_b_r{
+    margin-right: 150px;
+    margin-top: 150px;
+    float: right;  
+}
+
+#c_b_r, #c_b_l{
+    width: 10%;
+    height: 10%;
+    font-size: 1.5rem;
+    color: #101010;
+    background-color: #F8F8F8;
+    border: 2px solid #101010; 
+}
+
+#c_b_r:hover, #c_b_l:hover{
+    cursor: pointer;
+    background-color: #101010;
+    color: #F8F8F8;
+    transition: all .3s ease-in-out;
+}
+
+#css{
+    background-image: url(img/css.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 25%;
+}
+
+#js{
+    background-color: #101010;
+    color: #F8F8F8;
+    background-image: url(img/js.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

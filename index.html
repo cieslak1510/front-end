@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Języki front-end </title>
+        <link rel="Stylesheet" href="style.css">
+        <link rel="Stylesheet" href="resetstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <ul>
+                <li class="m_item" id="name"><a href="#intro" id="link0">CZYM JEST FRONT-END?</a></li> 
+                <li class="m_li"><a href="#" id="link3">JAVASCRIPT</a></li >
+                <li class="m_li"><a href="#" id="link2">CSS</a></li>
+                <li class="m_li"><a href="#" id="link1">HTML</a></li>
+            </ul>
+        </nav>
+        
+        <section class="sec" id="intro">
+            <h1>Czym jest front-end?</h1>
+            <p>Front-end w skrócie jest to wszystko, co widzisz na stronie internetowej.<br> <br>
+            Składają się na niego trzy języki: HTML, CSS oraz JavaScript. Na tej stronie zobaczysz wiele informacji na temat tych technologii.<br> <br>
+            Tekst, który widzisz jest widoczny dzięki HTML. Jest on ułożony w taki sposób dzięki CSS. A JavaScript? Zobaczysz jak przejdziesz dalej :) <br>
+            </p>
+        </section>
+        
+        <section class="sec" id="html">
+            <h1>HTML</h1>
+            <p id="html_p">Jest to hipertekstowy język znaczników. Wiele osób myli HTML z językiem programowania, którym  on w żadnym wypadku nie jest. <br><br>
+                Określa się w nim zawartość strony taką jak tekst czy zdjęcia.<br><br>
+                Zobacz, co można zrobić w HTML klikając przyciski poniżej. 
+            </p>
+            <button class="b_b_r" id="h_b_r" type="button">Zmiana tekstu</button>
+            <button class="b_b_l" id="h_b_l" type="button">Zmiana zdjęcia</button>
+         </section>
+        
+        <section class="sec" id="css">
+            <h1>CSS</h1>
+            <p id="css_p">CSS jest to język reguł stylizacji. To dzięki niemu strony teraz wyglądają inaczej niż w latach 90. <br><br>
+                        W CSS określa się style stron, układ tekstu, sekcji czy zdjęć. Określa on również kolory czy czcionki tekstów. <br><br>
+                        Kliknij przyciski poniżej aby zobaczyć co można zmienić w CSS.
+            </p>
+            <button id="c_b_l" type="button">Zamień kolory</button>
+            <button id="c_b_r" type="button">Zmień rozmiar czcionki</button>
+        </section>
+        
+        <section class="sec" id="js">
+            <h1>JAVASCRIPT</h1>
+            <p>JavaScript jest to skryptowy język programowania. Dzięki niemu strony są dynamiczne oraz interaktywne<br><br>
+                Płynna animacja przewijania i przyciski w poprzednich sekcjach są zasługą tego języka. Bez niego strony<br>
+                internetowe byłyby nudne a użytkownik mógłby tylko przeglądać treść, która też byłaby okrojona.<br>
+                Otwarzacz na Youtube, Mapy Google i wszystkie animacje są stworzone w JavaScripcie. Jest on najpotężniejszą<br>
+                częścią front-endu.
+            </p>
+        </section>
+        <script src="jquery.scrollTo.min.js"></script>
+        <script>
+        jQuery(function($){
+            $.scrollTo(0); 
+            $('#link1').click(function() { $.scrollTo($('#html'), 500);});
+            $('#link2').click(function() { $.scrollTo($('#css'), 500);});
+            $('#link3').click(function() { $.scrollTo($('#js'), 500);});
+            $('#link0').click(function() { $.scrollTo($('#intro'), 500);});
+            
+        }
+        );
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
